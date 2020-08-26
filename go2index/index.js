@@ -67,7 +67,7 @@ var authConfig = {
 var themeOptions = {
   cdn: "https://cdn.jsdelivr.net/gh/machsix/goindex-theme-acrou",
   // 主题版本号
-  version: "2.0.9",
+  version: "2.0.12",
   //可选默认系统语言:en/zh-chs/zh-cht
   languages: "en",
   render: {
@@ -93,10 +93,11 @@ var themeOptions = {
    */
   player: {
     /**
-     * 播放器api（不指定则使用浏览器默认播放器）
-     * Player api(Use browser default player if not specified)
+     * Player api: an API renders the DOM for the player
+     * DPlayer will be used if the api is empty
+     *
      */
-    api: "https://api.jsonpop.cn/demo/blplyaer/?url=",
+    // api: "https://api.jsonpop.cn/demo/blplyaer/?url=",
   },
 };
 // =======Options END=======

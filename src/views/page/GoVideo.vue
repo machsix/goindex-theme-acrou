@@ -67,6 +67,7 @@ export default {
       apiUrl: "",
       player: window.themeOptions.player,
       videoUrl: "",
+      lang: window.themeOptions.languages.includes('zh') ? 'zh-ch' : 'en'
     };
   },
   methods: {
@@ -80,7 +81,8 @@ export default {
             screenshot: true,
             video: {
                 url: this.videoUrl,
-                airplay: true
+                airplay: true,
+                lang: this.lang
             }
         });
       }
