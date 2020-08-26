@@ -66,7 +66,7 @@
             target="_blank"
             rel="noopener"
             title="View on github"
-            href="https://github.com/Aicirou/goindex-theme-acrou"
+            href="https://github.com/machsix/goindex-theme-acrou"
           >
             <i class="fab fa-github"></i>
           </a>

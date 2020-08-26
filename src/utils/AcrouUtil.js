@@ -125,8 +125,8 @@ export function utc2beijing(utc_datetime) {
   timestamp = timestamp.getTime();
   timestamp = timestamp / 1000;
 
-  // 增加8个小时，北京时间比utc时间多八个时区
-  var unixtimestamp = timestamp + 8 * 60 * 60;
+  // EST
+  var unixtimestamp = timestamp - 5 * 60 * 60;
 
   // 时间戳转为时间
   unixtimestamp = new Date(unixtimestamp * 1000);
