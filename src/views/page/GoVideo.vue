@@ -14,9 +14,7 @@
         allowfullscreen="true"
       ></iframe>
     </div>
-    <video v-else style="width:100%;" preload controls>
-      <source :src="videoUrl" type="video/mp4" />
-    </video>
+    <div v-else id="dplayer"></div>
     <div class="card">
       <header class="card-header">
         <p class="card-header-title">
@@ -62,6 +60,7 @@
 
 <script>
 import { decode64 } from "@utils/AcrouUtil";
+import DPlayer from "dplayer";
 export default {
   data: function() {
     return {
@@ -75,6 +74,16 @@ export default {
       // 便于开发环境调试
       this.videoUrl = window.location.origin + encodeURI(this.url);
       this.apiUrl = this.player.api + this.videoUrl;
+      if (!this.player.api) {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            screenshot: true,
+            video: {
+                url: this.videoUrl,
+                airplay: true
+            }
+        });
+      }
     },
   },
   activated() {

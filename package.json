@@ -1,6 +1,6 @@
 {
   "name": "go2index-theme-acrou",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "g2index": "1.1.1",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -16,6 +16,7 @@
     "bulma": "^0.8.2",
     "bulma-divider": "^0.2.0",
     "core-js": "^3.6.4",
+    "dplayer": "^1.26.0",
     "element-ui": "^2.13.1",
     "feb-alive": "^1.0.9",
     "js-base64": "^2.5.2",
